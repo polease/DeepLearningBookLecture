@@ -1,0 +1,146 @@
+ 
+
+
+color
+{
+  light-blue:#3C989E;
+  light-green:#5DB5A4;
+  light-yellow:#F4CDA5;
+  deep-yellow:#e6db74;
+  light-orange:#F57A82;
+  light-red:#ED5276;
+}
+
+:root{
+  --navigation-color :#FFFFFF;
+  --building-color:#F4CDA5;
+  --background-color :#3B653D;
+  --clue-color:#e6db74;
+  --hover-color:#ED5276;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+svg, div{
+ position:absolute;
+ top:0;
+ left:0; 
+}
+
+
+body
+{
+  background:url(../images/chalkboard.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: monospace, serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+text:hover
+{
+  stroke:var(--hover-color);
+  stroke-width:1;
+  cursor:pointer;
+}
+
+.trail-path-line
+{
+  stroke-width:2;
+  stroke : var(--navigation-color);
+}
+
+.trail-path-line:hover
+{
+  stroke:var(--navigation-color);
+}
+
+.trail-path-point
+{
+  fill:var(--navigation-color)
+}
+
+.trail-head-text
+{ 
+  font-size:14px;
+  font-weight: bold;
+  alignment-baseline:middle;
+  fill:var(--navigation-color);
+}
+
+.station
+{ 
+  font-size:12px; 
+  alignment-baseline:middle;
+  fill:var(--navigation-color);
+}
+
+.building
+{ 
+  font-size:10px;
+  alignment-baseline:middle;
+  fill:var(--clue-color);
+  
+}
+
+.clue-line
+{
+  stroke:var(--clue-color);
+  stroke-width: 1;
+}
+
+.clue-circle
+{
+  stroke:var(--navigation-color);
+  stroke-width: 2;
+  fill-opacity: 0;
+}
+
+.clue-shape
+{ 
+  font-size:10px;
+  fill:var(--clue-color);
+  
+}
+
+.display-window
+{
+  stroke:var(--clue-color);
+  stroke-width: 1;
+
+}
+
+.building-summary
+{
+  font-size:12px;
+  font-weight: bold;
+  width:400px;
+  alignment-baseline:middle;
+  fill:var(--clue-color);
+
+}
+
+.asset-image
+{
+  position: absolute;
+  border:0px;
+  border-style:none;
+}
+
+.fullscreen-button
+{ 
+  font-size:14px;
+  font-weight: bold;
+  fill:gray;
+}
+
+
